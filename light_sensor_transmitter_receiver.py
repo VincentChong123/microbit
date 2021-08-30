@@ -1,6 +1,7 @@
 #board1 triggers board2 to transmit board2 light sensor reading to board1
-#board1 then send the received value to data streamer
-#for board1 to detect light in a darkbox that store board2
+#board1 then send the received value to excel program (where board1 connected to a windows10 PC)
+#for board1 to read light level in a dark box that store board2
+
 def on_received_number(receivedNumber):
     dataStreamer.write_number(receivedNumber)
     dataStreamer.write_line()
